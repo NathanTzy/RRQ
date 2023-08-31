@@ -1,0 +1,453 @@
+/* NAVBAR */
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+body {
+    background-color: rgb(234, 217, 166);
+}
+
+.navbar-list {
+    background-color: rgb(237, 167, 28);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 17px 0;
+}
+
+.navbar-item {
+    margin: 0 20px;
+    list-style-type: none;
+}
+
+.toggle {
+    list-style-type: none;
+    display: none;
+    margin: 0 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+    color: rgb(241, 237, 156);
+    background-color: rgb(234, 181, 111);
+    transition: 0.3s;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-button {
+    font-size: 1em;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 4px;
+    padding: 7px;
+    text-decoration: none;
+    color: rgb(51, 45, 45);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-button:hover {
+    background-color: rgb(255, 200, 2);
+    padding: 9px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:929px) {
+    .toggle {
+        display: block;
+    }
+
+
+    .navbar-list {
+        flex-wrap: wrap;
+    }
+
+    .navbar-item {
+        display: none;
+        text-align: right;
+        margin: 20px;
+        margin-right: 40px;
+        width: 100%;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .navbar-button{
+        width: 40%;
+        justify-content: center;
+        margin: auto;
+        display: flex
+    }
+}
+
+/* TITLE */
+
+.title {
+    padding: 50px 50px;
+}
+
+.title-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.character {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+}
+
+.character-img {
+    width: 600px;
+    border-radius: 4%;
+}
+
+
+.big-heading {
+    flex: 1;
+    margin-left: 30px;
+    margin: auto;
+
+}
+
+
+.big-heading h1 {
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.big-heading p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(69, 62, 61);
+}
+
+.explore-button {
+    background-color: coral;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 20px 50px;
+    font-weight: bold;
+}
+
+.explore-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.explore-button:hover {
+    background-color: chocolate;
+    cursor: pointer;
+}
+@media screen and (max-width:1024px) {
+    .big-heading{
+        margin-left: 30px;
+    }
+    
+}
+
+@media screen and (max-width:912px) {
+    .title-container{
+        
+        flex-direction: column ;
+    }
+    .big-heading{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .character{
+        margin-top: 50px;
+
+    }
+
+    .character-img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .character-img
+    {
+        width: 290px
+
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+
+    .character{
+        margin-top: 10px;
+    }
+
+    .character-img{
+        width: 200px;
+    }
+
+    .big-heading h1{
+        font-size: 2.5em;
+    }
+    
+    .big-heading p{
+        font-size: 1em;
+    }
+
+    .explore-button{
+        padding: 10px 20px;
+        font-size: medium;
+    }
+}
+
+
+/*COLLECTION*/
+
+.collection {
+    margin-top: 25px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.collection h2 {
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.collection-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.collection-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px grey;
+}
+
+.collection-card:hover {
+    box-shadow: 0 0 40px rgb(253, 215, 0);
+}
+
+.img-box {
+    width: 310px;
+    height: 310px;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+}
+
+.img-box img {
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.img-box:hover img {
+    transform: scale(1.1);
+}
+
+.collection-card h3 {
+    margin: 5px 0 10px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card-button {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: coral;
+    padding: 15px 80px;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 20px 20px;
+    border: 0;
+}
+
+.role {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tipe {
+    margin: 10px 10px 0;
+    text-align: center;
+}
+
+.card-button:hover {
+    background-color: rgb(255, 208, 0);
+}
+
+@media screen and (max-width: 425px) {
+
+    .collection-card{
+        width: 70%;
+    }
+
+    .img-box{
+
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .collection-card{
+        width: 65%;
+    }
+
+    .img-box{
+
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+
+    .card-button{
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    .collection-card{
+        width: 75%;
+    }
+
+}
+/* aside */
+aside {
+    margin-top: 50px;
+    background-color: rgb(234, 217, 166);
+    justify-content: center;
+    display: flex;
+}
+
+.biography-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px grey;
+}
+
+.biography-card:hover {
+    box-shadow: 0 0 25px rgb(243, 191, 3);
+
+}
+
+
+.biography-card h3 {
+    margin: 5px 10px;
+}
+
+.biography-card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.biography-card h1 {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px rgb(255, 166, 0) solid;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    margin: 0 50px;
+}
+
+.contact {
+    margin: 20px 10px;
+}
+
+.social-media {
+    padding: 0 5px;
+}
+
+.p1{
+    box-shadow: 0 0 25px rgb(136, 127, 127);
+    border: 2px whitesmoke solid;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color:  aliceblue ;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+@media screen and (max-width:320px) {
+    .biography-card{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .profile-img{
+        width: 100%;
+    }
+
+    .p1{
+        margin: 0 40px 10px;
+    }
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: aliceblue;
+}
