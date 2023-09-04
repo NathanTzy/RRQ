@@ -108,7 +108,7 @@ body {
         display: block;
     }
 
-    .navbar-button{
+    .navbar-button {
         width: 40%;
         justify-content: center;
         margin: auto;
@@ -181,61 +181,70 @@ body {
     background-color: chocolate;
     cursor: pointer;
 }
+
 @media screen and (max-width:1024px) {
-    .big-heading{
+    .big-heading {
         margin-left: 30px;
     }
-    
+
 }
 
 @media screen and (max-width:912px) {
-    .title-container{
-        
-        flex-direction: column ;
+    .title-container {
+
+        flex-direction: column;
     }
-    .big-heading{
+
+    .big-heading {
         text-align: center;
         margin-top: 20px;
     }
 
-    .character{
+    .character {
         margin-top: 50px;
 
     }
 
-    .character-img{
+    .character-img {
         width: 400px;
     }
 }
 
 @media screen and (max-width:500px) {
-    .character-img
-    {
+    .character-img {
         width: 290px
-
     }
-    
+
+}
+
+@media screen and (max-width:426px) {
+
+    .big-heading {
+
+        margin-right: 30px;
+    }
+
 }
 
 @media screen and (max-width:320px) {
 
-    .character{
+    .character {
         margin-top: 10px;
     }
 
-    .character-img{
+    .character-img {
         width: 200px;
     }
 
-    .big-heading h1{
+    .big-heading h1 {
         font-size: 2.5em;
     }
-    
-    .big-heading p{
+
+    .big-heading p {
         font-size: 1em;
     }
 
-    .explore-button{
+    .explore-button {
         padding: 10px 20px;
         font-size: medium;
     }
@@ -329,11 +338,11 @@ body {
 
 @media screen and (max-width: 425px) {
 
-    .collection-card{
+    .collection-card {
         width: 70%;
     }
 
-    .img-box{
+    .img-box {
 
         width: 100%;
     }
@@ -341,11 +350,11 @@ body {
 
 @media screen and (max-width: 375px) {
 
-    .collection-card{
+    .collection-card {
         width: 65%;
     }
 
-    .img-box{
+    .img-box {
 
         width: 100%;
     }
@@ -355,16 +364,17 @@ body {
 @media screen and (max-width: 320px) {
 
 
-    .card-button{
+    .card-button {
         padding: 8px 15px;
         font-size: 1em;
     }
 
-    .collection-card{
+    .collection-card {
         width: 75%;
     }
 
 }
+
 /* aside */
 aside {
     margin-top: 50px;
@@ -417,29 +427,30 @@ aside {
     padding: 0 5px;
 }
 
-.p1{
+.p1 {
     box-shadow: 0 0 25px rgb(136, 127, 127);
     border: 2px whitesmoke solid;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: black;
-    color:  aliceblue ;
+    color: aliceblue;
     border-radius: 20px;
     margin: 0 20px;
 }
+
 @media screen and (max-width:320px) {
-    .biography-card{
+    .biography-card {
         width: 80%;
         display: flex;
         margin: auto;
         margin-bottom: 20px;
     }
-    
-    .profile-img{
+
+    .profile-img {
         width: 100%;
     }
 
-    .p1{
+    .p1 {
         margin: 0 40px 10px;
     }
 }
