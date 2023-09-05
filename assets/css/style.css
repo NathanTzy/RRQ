@@ -26,6 +26,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 17px 0;
+    font-size: 18px;
 }
 
 .navbar-item {
@@ -54,22 +55,34 @@ body {
     border-radius: 5px;
 }
 
+
 .logo {
+
     font-size: 2em;
     font-weight: bold;
     cursor: pointer;
     list-style-type: none;
     margin-right: auto;
-    margin-left: 30px;
+    margin-left: 20px;
 }
+
 
 .logo a {
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+@media screen and (max-width:426px) {
+
+.gambar{
+    width: 60px;
+}
+
+}
+
 .navbar-button {
-    font-size: 1em;
+    font-size: 1.3em;
     background-color: blanchedalmond;
     border: none;
     border-radius: 4px;
@@ -115,6 +128,7 @@ body {
         display: flex
     }
 }
+
 
 /* TITLE */
 
