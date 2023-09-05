@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-list {
-    background-color: rgb(237, 167, 28);
+    background-color: rgb(226, 222, 222);
     display: flex;
     justify-content: flex-end;
     align-items: center;
